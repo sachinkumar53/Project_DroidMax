@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/panel_horizontal_margin">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/panel_child_height">
+
+        <ImageView
+            style="@style/VolumePanelIcon"
+            android:id="@+id/ring_img" />
+
+        <SeekBar
+            android:layout_width="140px"
+            android:id="@+id/volume_seek_ringer"
+            style="@style/VolumeSeekBar" />
+
+        <ImageView
+            android:id="@+id/panel_expand"
+            style="@style/VolumePanelIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/secondary_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/panel_child_height">
+            <ImageView
+                android:id="@+id/media_img"
+                style="@style/VolumePanelIcon"/>
+
+            <SeekBar
+                android:id="@+id/volume_seek_media"
+                style="@style/VolumeSeekBar"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/panel_child_height">
+            <ImageView
+                android:id="@+id/notif_img"
+                style="@style/VolumePanelIcon" />
+
+            <SeekBar
+                android:id="@+id/volume_seek_notif"
+                style="@style/VolumeSeekBar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/panel_child_height">
+            <ImageView
+                android:id="@+id/sys_img"
+                style="@style/VolumePanelIcon"/>
+
+            <SeekBar
+                android:id="@+id/volume_seek_system"
+                style="@style/VolumeSeekBar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

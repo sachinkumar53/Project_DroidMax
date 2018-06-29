@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/ring_layout_normal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/panel_child_height">
+
+    <ImageView
+        style="@style/VolumePanelIcon"
+        android:id="@+id/ring_img_in_call" />
+
+    <SeekBar
+        android:id="@+id/volume_seek_ringer_in_call"
+        style="@style/VolumeSeekBar"
+        android:layout_width="match_parent" />
+
+</LinearLayout>
