@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sachin.weather.MainActivity">
+    <com.sachin.weather.WeatherLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <com.sachin.weather.WeatherIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.sachin.weather.WeatherTemp
+                android:text="20"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.sachin.weather.WeatherCondition
+                android:textSize="17dp"
+                android:text="30"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.sachin.weather.CityName
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.sachin.weather.WeatherLayout>
+</RelativeLayout>
